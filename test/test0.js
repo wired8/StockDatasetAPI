@@ -162,6 +162,7 @@ describe("trades_test ", function () {
               if (e.response.status_code == 404) {
                 continue;
               }
+
               expect(ar2.length).to.equal(ar1.length);
               for (let k = 0; k < ar1.length; k++) {
                 expect(ar2[k]).to.deep.equal(ar1[k]);
